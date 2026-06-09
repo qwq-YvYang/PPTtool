@@ -95,15 +95,16 @@ public string NextIcon { get; set; } = "▶";
 工具栏图标在 `ToolbarOverlay.cs` 的 `DrawCustomIcon()` 方法中绘制矢量图形，可自由修改。
 
 ### 自定义颜色主题
-
+```text
 // NavOverlay.cs 中的颜色配置
 public Color BorderColor = Color.FromArgb(160, 255, 255, 255);   // 边框
 public Color BgColor = Color.FromArgb(30, 255, 255, 255);        // 背景
 public Color HoverBorderColor = Color.FromArgb(220, 255, 255, 255); // 悬停边框
 public Color IconColor = Color.FromArgb(200, 255, 255, 255);     // 图标颜色
+```
 
 ## 📦 项目结构
-
+```tree
 PPTTool/
 ├── ThisAddIn.cs              # VSTO 入口，挂钩应用事件
 ├── NativeMethods.cs          # Win32 API 声明
@@ -113,6 +114,7 @@ PPTTool/
 ├── NavOverlay.cs             # 翻页栏（通用，支持左右布局）
 ├── SlideShowTracker.cs       # 放映生命周期管理
 └── README.md                 # 本文件
+```
 
 ---
 **注：本项目由deepseek辅助编写，功能暂不完善，作者比较菜，后期维护将依赖社区力量**
